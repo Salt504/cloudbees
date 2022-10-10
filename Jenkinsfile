@@ -97,11 +97,6 @@ pipeline{
             steps{
                 echo "DIOS QUE GUAPO LOCO"
             }
-
-            steps{
-
-                echo "fua tu"
-            }
         }
     }
 
