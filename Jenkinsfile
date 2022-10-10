@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label "principal"
+        label "jenkins-jenkins-agent"
     }
     stages{
         stage("Primero grande"){
