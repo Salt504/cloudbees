@@ -26,9 +26,6 @@ pipeline{
                         echo "JOJO"
                     }
 
-                    steps{
-                        echo "JUJA"
-                    }
                 }
 
                 stage("Cuarto pequeño"){
