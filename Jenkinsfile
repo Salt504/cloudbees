@@ -98,6 +98,13 @@ pipeline{
                 echo "DIOS QUE GUAPO LOCO"
             }
         }
+
+        stage("Tercer grande"){
+
+            steps{
+                echo "Funciona el trigger loquete"
+            }
+        }
     }
 
     post{
