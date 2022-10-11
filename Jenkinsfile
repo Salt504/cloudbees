@@ -105,7 +105,7 @@ pipeline {
 
             steps{
                 echo "Funciona el jodido trigger loquete"
-                sh 'mvn --version'
+                //sh 'mvn --version'
             }
             post{
                 always{
