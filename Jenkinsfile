@@ -120,9 +120,9 @@ pipeline {
         }
         failure{
             mail(
-                to: 'smanzano@devcenter.es'
-                subject: "MAMA"
-                body: 'JAJAJJAJJAJA'
+                to: 'smanzano@devcenter.es',
+                subject: "MAMA",
+                body: 'JAJAJJAJJAJA',
             )
             //echo "Argo ha fallao"
         }
