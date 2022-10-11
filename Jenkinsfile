@@ -119,7 +119,7 @@ pipeline {
             echo "Funsiona to"
         }
         failure{
-            emailext body: 'A Test EMail', subject: 'Test', to: 'smanzano@devcenter.es'
+            emailtext body: 'A Test EMail', subject: 'Test', to: 'smanzano@devcenter.es'
             //echo "Argo ha fallao"
         }
     }
