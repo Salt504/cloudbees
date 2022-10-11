@@ -124,6 +124,7 @@ pipeline {
                     body: 'A Test EMail', 
                     subject: 'Test', 
                     to: 'smanzano@devcenter.es'
+                )
             )
             //echo "Argo ha fallao"
         }
