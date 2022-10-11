@@ -104,7 +104,7 @@ pipeline {
         stage("Cuarto grande"){
 
             steps{
-                echo Funciona el jodido trigger, loquete
+                echo Funciona el jodido trigger loquete
             }
         }
     }
