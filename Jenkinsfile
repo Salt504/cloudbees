@@ -120,7 +120,7 @@ pipeline {
         }
         failure{
             mail(
-                to: 'zurimanes@gmail.com',
+                to: 's.manzano.esclapez@accenture.com',
                 subject: 'no funsiona tt',
                 body: 'JAJAJAJAJAJAJA',
             )
