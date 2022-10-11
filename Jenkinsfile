@@ -3,9 +3,6 @@ pipeline {
     agent{
         label "jenkins-jenkins-agent"
     }
-    triggers{
-        pollSCM('1')
-    }
     stages{
         stage("Primero grande"){
             parallel{
