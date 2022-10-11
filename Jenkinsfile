@@ -121,7 +121,7 @@ pipeline {
         failure{
             emailext body: 'JAJJAAAA',
             subject: 'MAMA',
-            to: 'smanzano@devcenter.es'
+            to: 'zurimanes@gmail.com'
             //echo "Argo ha fallao"
         }
     }
