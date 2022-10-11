@@ -99,7 +99,7 @@ pipeline{
             }
         }
 
-        stage("Tercer grande"){
+        stage("Cuarto grande"){
 
             steps{
                 echo "Funciona el trigger, loquete"
