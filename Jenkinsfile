@@ -107,17 +107,6 @@ pipeline {
                 echo "Funciona el jodido trigger loquete"
                 //sh 'mvn --version'
             }
-            post{
-                always{
-                    echo "Ziempre tt"
-                }
-                success{
-                    echo "Funsiona to"
-                }
-                failure{
-                    echo "Argo ha fallao"
-                }
-            }
         }
     }
 
@@ -126,6 +115,7 @@ pipeline {
             echo "Ziempre tt"
         }
         success{
+            mail to: smanzano@devcenter.es, subject: 'funsiona tt'
             echo "Funsiona to"
         }
         failure{
