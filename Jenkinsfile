@@ -119,7 +119,11 @@ pipeline {
             echo "Funsiona to"
         }
         failure{
-            mail to: smanzano@devcenter.es, subject: 'no funsiona tt'
+            mail(
+                to: 'smanzano@devcenter.es',
+                subject: 'no funsiona tt',
+                body: 'JAJAJAJAJAJAJA',
+            )
             //echo "Argo ha fallao"
         }
     }
