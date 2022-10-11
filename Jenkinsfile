@@ -1,9 +1,9 @@
 pipeline{ 
-    
+
     agent{
         label "jenkins-jenkins-agent"
     }
-    triggers {
+    triggers{
         pollSCM('1')
     }
     stages{
