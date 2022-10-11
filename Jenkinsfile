@@ -105,7 +105,7 @@ pipeline {
 
             steps{
                 echo "Funciona el jodido trigger loquete"
-                //sh 'mvn --version'
+                sh 'mvn --version'
             }
         }
     }
@@ -115,10 +115,11 @@ pipeline {
             echo "Ziempre tt"
         }
         success{
-            mail to: smanzano@devcenter.es, subject: 'funsiona tt'
+
             echo "Funsiona to"
         }
         failure{
+            mail to: smanzano@devcenter.es, subject: 'no funsiona tt'
             echo "Argo ha fallao"
         }
     }
