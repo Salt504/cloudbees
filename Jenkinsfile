@@ -1,4 +1,4 @@
-pipeline{ 
+pipeline { 
 
     agent{
         label "jenkins-jenkins-agent"
@@ -106,7 +106,7 @@ pipeline{
         stage("Cuarto grande"){
 
             steps{
-                echo "Funciona el trigger, loquete"
+                echo "Funciona el jodido trigger, loquete"
             }
         }
     }
