@@ -106,6 +106,17 @@ pipeline {
             steps{
                 echo Funciona el jodido trigger loquete
             }
+            post{
+                always{
+                    echo "Ziempre tt"
+                }
+                success{
+                    echo "Funsiona to"
+                }
+                failure{
+                    echo "Argo ha fallao"
+                }
+            }
         }
     }
 
