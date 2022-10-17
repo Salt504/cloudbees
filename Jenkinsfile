@@ -1,4 +1,4 @@
-@Library([ 'Libreria-chula@main' ]) _
+@Library( 'Libreria-chula@main' ) _
 
 pipeline { 
 
