@@ -1,3 +1,5 @@
+@library ([ 'Libreria-chula@main' ])
+
 pipeline { 
 
     agent{
@@ -11,14 +13,14 @@ pipeline {
                 stage("Primero pequeño"){
 
                     steps{
-                        echo "JAJAJAJAJA"
+                        Hola('sergio')
                     }
                 }
 
                 stage("Segundo pequeño"){
 
                     steps{
-                        echo "JIJIJIJIJI"
+                        Hola()
                     }
                 }
 
