@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage("Mostrar version"){
             steps{
-                Nombre: sh cut -d ":" -f1 release.yaml
+                Nombre: cut -d ":" -f1 release.yaml
                 echo "$Nombre"
             }
         }
