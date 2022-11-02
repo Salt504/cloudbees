@@ -1,130 +1,21 @@
-@Library( 'Libreria-chula@main' ) _
-
-pipeline { 
-
+pipeline{
     agent{
-        label "jenkins-jenkins-agent"
+        any
     }
-
     stages{
-        stage("Primero grande"){
-            parallel{
-
-                stage("Primero pequeño"){
-
-                    steps{
-                        Hola('sergio')
-                    }
-                }
-
-                stage("Segundo pequeño"){
-
-                    steps{
-                        Hola()
-                    }
-                }
-
-                stage("Tercero pequeño"){
-
-                    steps{
-                        echo "JOJO"
-                    }
-
-                }
-
-                stage("Cuarto pequeño"){
-
-                    steps{
-                        echo "JESJESJES"
-                    }
-                }
-            }
-        }
-
-        stage("Segundo grande"){
-
-            parallel{
-
-                stage("Quinto pequeño"){
-
-                    steps{
-                        echo "Yo no me lucro"
-                    }
-                }
-
-                stage("Sexto pequeño"){
-
-                    steps{
-                        echo "Yo no me lucro demasiado"
-                    }
-                }
-
-                stage("Septimo pequeño"){
-
-                    steps{
-                        echo "Yo si me lucro"
-                    }
-                }
-
-                stage("Octavo pequeño"){
-
-                    steps{
-                        echo "Yo no me debería lucrar"
-                    }
-                }
-
-                stage("Noveno pequeño"){
-
-                    steps{
-                        echo "Dejame empaz"
-                    }
-                }
-
-                stage("Décimo pequeño"){
-
-                    steps{
-                        echo "Yo no me lucro joder"
-                    }
-                }
-
-                stage("Undécimo pequeño"){
-
-                    steps{
-                        echo "Yo no quiero me lucrar"
-                    }
-                }
-            }
-        }
-
-        stage("Tercer grande"){
-
+        stage("Mostrar version"){
             steps{
-                echo "DIOS QUE GUAPO LOCO"
-            }
-        }
-
-        stage("Cuarto grande"){
-
-            steps{
-                echo "Funciona el jodido trigger loquete"
-                sh 'mvn --version'
+                Nombre: cut '-d ":" -f1 release.yaml'
+                echo "$Nombre"
             }
         }
     }
-
     post{
         always{
             echo "Ziempre tt"
         }
         success{
-
             echo "Funsiona to"
-        }
-        failure{
-            emailext body: 'JAJJAAAA',
-            subject: 'MAMA',
-            to: 'zurimanes@gmail.com'
-            //echo "Argo ha fallao"
         }
     }
 }
