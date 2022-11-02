@@ -1,7 +1,7 @@
 pipeline{
-    agent{
-        any
-    }
+    
+    agent any
+
     stages{
         stage("Mostrar version"){
             steps{
@@ -10,6 +10,7 @@ pipeline{
             }
         }
     }
+
     post{
         always{
             echo "Ziempre tt"
