@@ -1,11 +1,11 @@
 pipeline{
-    
+
     agent any
 
     stages{
         stage("Mostrar version"){
             steps{
-                Nombre: cut '-d ":" -f1 release.yaml'
+                Nombre: sh 'cut -d ":" -f1 release.yaml'
                 echo "$Nombre"
             }
         }
