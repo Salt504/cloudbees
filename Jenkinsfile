@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage("Mostrar version"){
             steps{
-                sh 'echo "Las version de APP_JAVA-PRO es $( grep "APP_JAVA-PRO" release.yml | cut -d ": " -f2 ) xd" '
+                sh 'echo "Las version de APP_JAVA-PRO es $( grep "APP_JAVA-PRO" release.yaml | cut -d ": " -f2 ) xd" '
             }
         }
     }
