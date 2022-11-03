@@ -7,8 +7,8 @@ pipeline{
             steps{
                 sh '''
                 COMANDO = `cut -d ":" -f1 release.yaml`
-                
-                echo "$COMANDO"
+                COMANDO2 = `cut -d ":" -f2 release.yaml`
+                echo "Las versiones de $COMANDO son $COMANDO2 xd"
                 '''
             }
         }
