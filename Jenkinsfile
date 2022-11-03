@@ -7,8 +7,9 @@ pipeline{
             steps{
                 sh '''
                 COMANDO = `cut -d ":" -f1 release.yaml`
-                '''
+                
                 echo "$COMANDO"
+                '''
             }
         }
     }
