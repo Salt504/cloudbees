@@ -6,7 +6,7 @@ pipeline{
         stage("Mostrar version"){
             steps{
                 sh '''
-                for LINEA in `cat mama.txt`
+                for LINEA in `cat release.yaml`
                 do
                 COMANDO = `cut -d ":" -f1 release.yaml`
                 COMANDODOS = `cut -d ":" -f2 release.yaml`
