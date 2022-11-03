@@ -5,14 +5,7 @@ pipeline{
     stages{
         stage("Mostrar version"){
             steps{
-                sh '''
-                for LINEA in `cat release.yaml`
-                do
-                COMANDO = `cut -d ":" -f1 release.yaml`
-                COMANDODOS = `cut -d ":" -f2 release.yaml`
-                echo "Las versiones de $COMANDO son $COMANDO2 xd"
-                done
-                '''
+                echo "Las version de APP_JAVA-PRO es $(`cut -d ":" -f2 release.yaml`) xd"
             }
         }
     }
